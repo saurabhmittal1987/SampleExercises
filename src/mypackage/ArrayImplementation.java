@@ -1,7 +1,8 @@
 package mypackage;
 
 import java.util.Arrays;
-import java.util.regex.Pattern;
+import java.util.Hashtable;
+import java.util.Map;
 
 public class ArrayImplementation {
 
@@ -17,8 +18,14 @@ public class ArrayImplementation {
 //		arrayImplementation.printArrayRightToLeft(array[0]);
 //		arrayImplementation.reverseArray(array[0]);
 	
-		Pattern pattern = Pattern.compile("[A-Za-z0-9][A-Za-z0-9-/&@., ]*[A-Za-z0-9]+");
-        System.out.println(pattern.matcher("a@g").matches());
+//		Pattern pattern = Pattern.compile("[A-Za-z0-9][A-Za-z0-9-/&@., ]*[A-Za-z0-9]+");
+//        System.out.println(pattern.matcher("a@g").matches());
+		
+		Hashtable<String, String> hashtable = new Hashtable<>();
+        hashtable.put("1", "2");
+        for (Map.Entry m : hashtable.entrySet()) {
+            System.out.println(m.getKey() + " " + m.getValue());
+        }
 	}
 	
 	public void printArrayLeftToRight(int []array){
