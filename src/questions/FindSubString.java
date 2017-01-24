@@ -1,6 +1,6 @@
-package Questions;
+package questions;
 
-public class findSubString {
+public class FindSubString {
 
 	public static void main(String... args) {
 		System.out.println(isSubString("abaaabc", "abc"));

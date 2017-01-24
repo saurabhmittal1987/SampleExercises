@@ -1,8 +1,8 @@
-package Questions;
+package questions;
 
 import java.util.Arrays;
 
-public class findSubarray {
+public class FindSubarray {
 
 	public static void main(String... args) {
 		int[] array = { -10, 0, 5, 10, 15, 20, 30 };
